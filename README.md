@@ -189,7 +189,7 @@ squares = list(map(lambda x: x * x, nums))
 * `Runnable` vs `Node`: A `Runnable` can represent various operations, whereas the `Node` typically receives a `State`, performs an action on it, and then updates the `State`.
 * **Analogy:** **LEGO Bricks:** Just as LEGO bricks can snapped togheter to build complex structures, `Runnables` can be combined to create sophisticated AI workflows.
 
-#### Messages:
+#### `Messages`:
 
 * `HumanMessage`: Represents input from a user.
 * `SystemMessage`: Used to provide instructions or context to the model.
