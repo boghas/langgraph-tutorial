@@ -4,7 +4,7 @@ A repository dedidcate to learning LangGraph.
 
 ## What is LanngGraph?
 
-LangGraph is a framework for building **stateful, multi-agent AI workflow** using **graphs** - where each node represents an LLM, tool, or logic step, and edges define how information flows between them. It extends [**LangChain**](https://github.com/boghas/langgraph-tutorial.git) (check the link for a tutorial on LangChain) to make complex, conversation, or reactive AI systems easier to manage.
+LangGraph is a framework for building **stateful, multi-agent AI workflow** using **graphs** - where each node represents an LLM, tool, or logic step, and edges define how information flows between them. It extends [**LangChain**](https://github.com/boghas/langgraph-tutorial.git) to make complex, conversation, or reactive AI systems easier to manage.
 
 ## Overview
 
@@ -18,7 +18,7 @@ LangGraph is a framework for building **stateful, multi-agent AI workflow** usin
 
 ##### **`Normal Dictionary`:**
   
-```movie = {"name": "Avengers Endgame"m, "year": 2019}```
+```movie = {"name": "Avengers Endgame", "year": 2019}```
 
 * * Allows for *efficient data retrieval* based on unique keys
 * * *Flexible* and easy to implement.
@@ -114,7 +114,7 @@ nums = [1, 2, 3, 4]
 squares = list(map(lambda x: x * x, nums))
 ```
 
-* In Python `map()` is a built-in function that **appliesa function to each item in an iterable** (like a list) and returns a **map object** (an iterator). *It's also efficient.*
+* In Python `map()` is a built-in function that **applies a function to each item in an iterable** (like a list) and returns a **map object** (an iterator). *It's also efficient.*
 
 * * Lambda is just a **shortcut** to writing small functions!
 * * It's efficient.
@@ -130,7 +130,7 @@ squares = list(map(lambda x: x * x, nums))
 #### `Nodes`:
 
 * `Nodes` are individual *functions or operations* that perform *specific tasks* within the graph.
-* Each node receives *input (often the current state)*, **process** it, and **produces** and **output** or an **updated state.**
+* Each node receives *input (often the current state)*, **process** it, and **produces** an **output** or an **updated state.**
 * **Analogy**: **Assembly Line Stations:** Each station does one job - attach a part, paint it, inspect quality, etc.
 
 #### `Graph`:
@@ -152,7 +152,7 @@ squares = list(map(lambda x: x * x, nums))
 
 #### `START Node`:
 
-* The `START node` is a **virtual entry point** in ***LangGraph**, marking where the workflow begins.
+* The `START node` is a **virtual entry point** in **LangGraph**, marking where the workflow begins.
 * It doesn't ***perform any operations itself***, but serves as the ***designated starting position*** for the graph's execution.
 * **Analogy:** **Race Starting Line:** The place where a race officially begins.
 
@@ -179,7 +179,7 @@ squares = list(map(lambda x: x * x, nums))
 #### `StateGraph`:
 
 * A `StateGraph` is a class in `LangGraph` used to ***build and compile*** the graph structure.
-* it ***manages nodes, edges, and the overall state***, ensuring that the workflow operates in a unified way that data flows correctly between components.
+* it ***manages nodes, edges, and the overall state***, ensuring that the workflow operates in a unified way and that data flows correctly between components.
 * **Analogy:** **Blueprint of a Building:** Just as a blueprint outlines the design and connections within a building, a `StateGraph` defines the structure and flow of the workflow.
 
 #### `Runnable`:
